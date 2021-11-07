@@ -1,9 +1,13 @@
 <template>
+  <Memo></Memo>
 </template>
 
 <script>
+import Memo from './components/Memo'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: { Memo }
 }
 </script>
 
