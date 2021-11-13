@@ -3,7 +3,17 @@ import * as types from './mutation-type'
 
 export default createStore({
   state: {
+    memos: [
+      {
+        id: 1,
+        content: '牛乳を買う'
+      }
+    ],
+
+    // 次に追加するタスクのID
+    nextTaskId: 2
   },
+
   mutations: {
     [types.ADD_MEMO] (state, payload) {
       // TODO:
