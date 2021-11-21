@@ -9,6 +9,7 @@ export default createStore({
         content: '牛乳を買う'
       }
     ],
+    action: null,
 
     // 次に追加するタスクのID
     nextTaskId: 2
@@ -28,6 +29,10 @@ export default createStore({
     [types.REMOVE_MEMO] (state, payload) {
       // TODO:
       throw new Error('REMOVE_MEMO mutations should be implemented')
+    },
+
+    [types.CHANGE_ACTION] (state, { action }) {
+      state.action = action
     }
   },
   actions: {

@@ -1,5 +1,4 @@
 <template>
-<div class="col-3">
   <h2>一覧</h2>
   <ul>
     <li v-for="memo in memos" :key="memo.id">
@@ -7,7 +6,6 @@
     </li>
   </ul>
   <button class="btn btn-primary" @click="newMemo">新規作成</button>
-</div>
 </template>
 
 <script>
